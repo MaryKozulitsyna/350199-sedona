@@ -1,0 +1,14 @@
+body {
+  font-size: 21px;
+  line-height: normal;
+  color: black;
+  font-weight: normal;
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+}
+b {
+  font-weight: bold;
+}
+p {
+  font-size: 14px;
+}

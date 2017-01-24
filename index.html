@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -18,75 +19,89 @@
             <a href="#">Карта штата</a>
           </li>
           <li>
-            <a href="#">Гостиницы</a>
+            <a href="hotels.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
-      <a class="logo-sedona" href="#">
-        <img src="img/city of sedona.png" width="135" height="70" alt="city of sedona">
-      </a>
+      <div class="index-logo-sedona">
+        <img src="img/city-of-sedona.png" width="137" height="70" alt="city of sedona">
+      </div>
     </header>
     <main class="container">
-      <div class="index-intro">
-        <img src="img/index-intro.png" width="1200" height="510" alt="Sedona">
+      <div class="intro-img">
+        <img class="intro"src="img/index-intro.png" width="458" height="352" alt="Sedona">
       </div>
       <div class="index-content-promo">
         <b class="content-promo">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       <div class="index-content">
-        <div class="index-content-first">
-          <b class="content-name">Настоящий городок</b>
+        <div class="content-first">
+          <b class="content-name-white">Настоящий городок</b>
           <p>— №1 —</p>
           <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
-          <img src="img/real-city.png" width="800" height="255" alt="Real city">
         </div>
-        <div class="index-content-housing">
-          <b class="content-name">Жилье</b>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <div class="content-first-img">
+          <img src="img/real-city.jpg" width="800" height="255" alt="Real city">
         </div>
-        <div class="index-content-food">
-          <b class="content-name">Еда</b>
-          <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
-        </div>
-        <div class="index-content-souvenirs">
-          <b class="content-name">Сквениры</b>
-          <p>Не только китайского, но и местного производства!</p>
-        </div>
-        <div class="index-content-second">
-          <b class="content-name">там есть мост дьявола</b>
+        <section class="index-content-tourism">
+          <div class="index-content-housing">
+            <b class="content-name">Жилье</b>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="index-content-food">
+            <b class="content-name">Еда</b>
+            <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
+          </div>
+          <div class="index-content-souvenirs">
+            <b class="content-name">Сувениры</b>
+            <p>Не только китайского, но и местного производства!</p>
+          </div>
+        </section>
+        <div class="content-second">
+          <b class="content-name-white">там есть мост дьявола</b>
           <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          <img src="img/devils-bridge.png" width="800" height="255" alt="Devil's bridge">
         </div>
-        <div class="index-content-fird">
-          <b class="content-name">Небольшая площадь</b>
-          <p>— №3 —</p>
-          <p>Все достопримечательности находятся очень близко</p>
+        <div class="content-second-img">
+          <img src="img/devils-bridge.jpg" width="800" height="255" alt="Devil's bridge">
         </div>
-        <div class="index-content-fourth">
-          <b class="content-name">Красивая дорога</b>
-          <p>— №4 —</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-        </div>
-        <div class="index-content-fifth">
-          <b class="content-name">Мало туристов</b>
-          <p>— №5 —</p>
-          <p>Большинство едет в гранд каньон и толпится там</p>
-        </div>
+        <section class="index-content-advantages">
+          <div class="content-fird">
+            <b class="content-name">Небольшая площадь</b>
+            <p>— №3 —</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="index-content-fourth">
+            <b class="content-name">Красивая дорога</b>
+            <p>— №4 —</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          </div>
+          <div class="index-content-fifth">
+            <b class="content-name">Мало туристов</b>
+            <p>— №5 —</p>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </section>
       </div>
       <div class="index-content-booking">
         <div class="index-content-interest">
-        <b class="content-interest">Заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <b class="content-interest">Заинтересовались?</b>
+          <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
         <div class="index-booking">
-          <button class="btn search-hotels">Поиск гостиниц в Седоне</button>
-            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <a class="btn-search" href="#">Поиск гостиниц в Седоне</a>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
             <label for="check-in-date">Дата заезда:</label>
             <input id="check-in-date" type="text" name="check-in" placeholder="24 Апреля 2017">
+              <a class="calendar-chech-in" href=#>
+                <img src="img/calendar.png" width="21" height="22">
+              </a>
             <label for="date-of-departure">Дата выезда:</label>
             <input id="date-of-departure" type="text" name="departure" placeholder="4 Июля 2017">
+            <a class="calendar-departure" href=#>
+              <img src="img/calendar.png" width="21" height="22">
+            </a>
             <label for="adults">Взрослые:</label>
             <button class="btn reduce">-</button>
             <input id="adults" type="text" name="adults" placeholder="2">
@@ -99,14 +114,13 @@
           </form>
         </div>
         <div class="map">
-          <a href="https://yandex.ru/maps/110669/sedona/?clid=2270456&win=262&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D-111.76381%252C34.86597%26spn%3D0.001%252C0.001%26text%3D%25D0%25A1%25D0%25BE%25D0%25B5%25D0%25B4%25D0%25B8%25D0%25BD%25D1%2591%25D0%25BD%25D0%25BD%25D1%258B%25D0%25B5%2B%25D0%25A8%25D1%2582%25D0%25B0%25D1%2582%25D1%258B%2B%25D0%2590%25D0%25BC%25D0%25B5%25D1%2580%25D0%25B8%25D0%25BA%25D0%25B8%252C%2B%25D0%2590%25D1%2580%25D0%25B8%25D0%25B7%25D0%25BE%25D0%25BD%25D0%25B0%252C%2B%25D0%25A1%25D0%25B5%25D0%25B4%25D0%25BE%25D0%25BD%25D0%25B0&ll=-111.795570%2C34.854133&z=13">
-            <img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=PhBfajuXJk3S1zA9nc8RRNrm3Ye5V_lZ&amp;width=600&amp;height=418&amp;lang=ru_RU&amp;sourceType=constructor">
-          </a>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249282.08778332322!2d-111.90524353694703!3d34.82307196688206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1485246084033" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </div>
     </main>
     <footer class="main-footer">
       <div class="container">
-        <section class="#">
+        <section class="hashtag">
           <b>#visitsedona</b>
         </section>
         <section class="footer-social">
@@ -117,7 +131,7 @@
         <section class="footer-copyright">
           <p>WEBSITE BY</p>
           <a class="logo" href="https://htmlacademy.ru">
-            <img src="https://assets.htmlacademy.ru/img/logo.svg" width="161" height="55" alt="HTML Academy">
+            <img src="img/html-academy.png" width="161" height="55" alt="HTML Academy">
           </a>
        </section>
       </div>
