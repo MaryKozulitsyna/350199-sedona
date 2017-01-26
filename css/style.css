@@ -7,12 +7,18 @@ body {
   text-transform: uppercase;
 }
 h2 {
+  font-size: 21px;
+  line-height: normal;
+  color: black;
   font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
 }
 h3 {
-  font-weight: bold;
   font-size: 16px;
-}
-p {
-  font-size: 14px;
+  line-height: normal;
+  color: black;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
 }
