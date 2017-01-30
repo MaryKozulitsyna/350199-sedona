@@ -9,7 +9,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <ul>
+        <ul class="main-navigation-list">
           <li>
             <a href="#">Информация</a>
           </li>
@@ -30,65 +30,71 @@
     </header>
     <main class="container">
       <div class="intro-img">
-        <img class="intro" src="img/index-intro.png" width="458" height="352" alt="Sedona">
+        <div class="index-intro-img">
+          <img class="intro" src="img/index-intro.png" width="458" height="352" alt="Sedona">
+        </div>
       </div>
       <div class="index-content-promo">
         <b class="content-promo">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="lid promo-5reason">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       <div class="index-content">
-        <div class="content-first">
-          <h2 class="content-name-white">Настоящий городок</h2>
-          <p>— №1 —</p>
-          <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
-        </div>
-        <div class="content-first-img">
-          <img src="img/real-city.jpg" width="800" height="255" alt="Real city">
-        </div>
-        <section class="index-content-tourism">
-          <div class="index-content-housing">
+        <section class="index-content-first clearfix">
+          <div class="content-first">
+            <h2 class="content-name-white">Настоящий городок</h2>
+            <p>— №1 —</p>
+            <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="content-first-img">
+            <img src="img/real-city.jpg" width="800" height="257" alt="Real city">
+          </div>
+        </section>
+        <section class="index-content-tourism clearfix">
+          <div class="index-content housing">
             <h2 class="content-name">Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="index-content-food">
+          <div class="index-content food">
             <h2 class="content-name">Еда</h2>
             <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
           </div>
-          <div class="index-content-souvenirs">
+          <div class="index-content souvenirs">
             <h2 class="content-name">Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </section>
-        <div class="content-second">
-          <h2 class="content-name-white">там есть мост дьявола</h2>
-          <p>— №2 —</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </div>
-        <div class="content-second-img">
-          <img src="img/devils-bridge.jpg" width="800" height="255" alt="Devil's bridge">
-        </div>
-        <section class="index-content-advantages">
-          <div class="content-fird">
+        <section class="index-content-second clearfix">
+          <div class="content-second">
+            <h2 class="content-name-white">там есть мост дьявола</h2>
+            <p>— №2 —</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+          <div class="content-second-img">
+            <img src="img/devils-bridge.jpg" width="800" height="257" alt="Devil's bridge">
+          </div>
+        </section>
+        <section class="index-content-advantages clearfix">
+          <div class="index-advantages fird">
             <h2 class="content-name">Небольшая площадь</h2>
             <p>— №3 —</p>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
-          <div class="index-content-fourth">
+          <div class="index-advantages fourth">
             <h2 class="content-name">Красивая дорога</h2>
             <p>— №4 —</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
           </div>
-          <div class="index-content-fifth">
+          <div class="index-advantages fifth">
             <h2 class="content-name">Мало туристов</h2>
             <p>— №5 —</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </div>
         </section>
       </div>
-      <div class="index-content-booking">
+      <div class="index-content-booking clearfix">
         <b class="content-interest">Заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="btn-search" href="#">Поиск гостиниц в Седоне</a>
+        <p class="lid date">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="btn-search" href="#">Поиск гостиницы в Седоне</a>
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="check-in-date">Дата заезда:</label>
           <input id="check-in-date" type="text" name="check-in" placeholder="24 Апреля 2017">
@@ -117,8 +123,8 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
-        <section class="hashtag">
+      <div class="container clearfix">
+        <section class="footer-hashtag">
           <b>#visitsedona</b>
         </section>
         <section class="footer-social">
@@ -127,9 +133,9 @@
           <a class="social-btn social-btn-yt" href="#">Ютюб</a>
         </section>
         <section class="footer-copyright">
-          <p>WEBSITE BY</p>
+          <p class="lid">WEBSITE BY</p>
           <a class="logo" href="https://htmlacademy.ru">
-            <img src="img/html-academy.png" width="161" height="55" alt="HTML Academy">
+            <img src="img/html-academy.png" width="113" height="39" alt="HTML Academy">
           </a>
        </section>
       </div>

@@ -9,7 +9,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <ul>
+        <ul class="main-navigation-list">
           <li>
             <a href="#">Информация</a>
           </li>
@@ -23,15 +23,15 @@
             <b class="selected">Гостиницы</b>
           </li>
         </ul>
+        <div class="index-logo-sedona">
+          <a class="logo-sedona" href="index.html">
+            <img src="img/city-of-sedona.png" width="137" height="70" alt="city of sedona">
+          </a>
+        </div>
       </nav>
-      <div class="index-logo-sedona">
-        <a class="logo-sedona" href="index.html">
-          <img src="img/city-of-sedona.png" width="137" height="70" alt="city of sedona">
-        </a>
-      </div>
     </header>
     <main class="container">
-      <form class="search-filter" action="https://echo.htmlacademy.ru" method="post">
+      <form class="search-filter" action="https://echo.htmlacademy.ru" method="get">
         <div class="search-filter-infrastructure">
           <h3 class="infrastructure">Инфрастуктура:</h3>
             <input id="pool" type="checkbox" checked>
@@ -61,12 +61,12 @@
             <button class="skroll_right"></button>
             <div class="skroll_field"></div>
           </div>
-        <button class="show-result" type="submit">Показать</button>
+          <button class="show-result" type="submit">Показать</button>
         </div>
       </form>
       <div class="result">
         <div class="result-filter">
-          <b class="search-number">Найдено:3</b>
+          <b class="search-number caption">Найдено: 3</b>
           <p class="sorting">Сортировка:</p>
           <nav class="search-navigation">
             <ul>
@@ -98,7 +98,7 @@
               <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort&Spa">
             </div>
             <div class="hotel-information">
-              <b class="name-type-housing">Amara Resort&Spa</b>
+              <b class="name-type-housing caption">Amara Resort&Spa</b>
               <p class="type-housing">Гостиница</p>
               <p class="cost">От 4000р</p>
               <a class="btn-detail" href="#">Подробнее</a>
@@ -115,15 +115,15 @@
                 <li class="star">
                 </li>
               </ul>
-              <p class="rating">Рейтинг:8,5</p>
+              <p class="rating">Рейтинг: 8,5</p>
             </div>
           </article>
           <article class="motel">
             <div class="hotel-img">
               <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
             </div>
-            <div class="motel-information">
-              <b class="name-type-housing">Desert Quail Inn</b>
+            <div class="hotel-information">
+              <b class="name-type-housing caption">Desert Quail Inn</b>
               <p class="type-housing">Мотель</p>
               <p class="cost">От 3000р</p>
               <a class="btn-detail" href="#">Подробнее</a>
@@ -138,15 +138,15 @@
                 <li class="star">
                 </li>
               </ul>
-              <p class="rating">Рейтинг:8,9</p>
+              <p class="rating">Рейтинг: 8,9</p>
             </div>
           </article>
           <article class="apartments">
             <div class="hotel-img">
               <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             </div>
-            <div class="motel-information">
-              <b class="name-type-housing">Villas At Poc Diablo</b>
+            <div class="hotel-information">
+              <b class="name-type-housing caption">Villas At Poc Diablo</b>
               <p class="type-housing">Апартаменты</p>
               <p class="cost">От 2000р</p>
               <a class="btn-detail" href="#">Подробнее</a>
@@ -159,15 +159,15 @@
                 <li class="star">
                 </li>
               </ul>
-              <p class="rating">Рейтинг:9,2</p>
+              <p class="rating">Рейтинг: 9,2</p>
             </div>
           </article>
         </div>
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
-        <section class="hashtag">
+      <div class="container clearfix">
+        <section class="footer-hashtag">
           <b>#visitsedona</b>
         </section>
         <section class="footer-social">
@@ -176,9 +176,9 @@
           <a class="social-btn social-btn-yt" href="#">Ютюб</a>
         </section>
         <section class="footer-copyright">
-          <p>WEBSITE BY</p>
+          <p class="lid">WEBSITE BY</p>
           <a class="logo" href="https://htmlacademy.ru">
-            <img src="img/html-academy.png" width="161" height="55" alt="HTML Academy">
+            <img src="img/html-academy.png" width="113" height="39" alt="HTML Academy">
           </a>
        </section>
       </div>
