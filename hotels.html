@@ -10,48 +10,60 @@
     <header class="main-header">
       <nav class="main-navigation">
         <ul class="main-navigation-list">
-          <li>
+          <li class="main-navigation-info">
             <a href="#">Информация</a>
           </li>
-          <li>
+          <li class="main-navigation-photo">
             <a href="#">Фото и видео</a>
           </li>
-          <li>
+          <li class="main-navigation-map">
             <a href="#">Карта штата</a>
           </li>
-          <li>
-            <b class="selected">Гостиницы</b>
+          <li class="main-navigation-hotels">
+            <a href="hotels.html">Гостиницы</a>
           </li>
         </ul>
-        <div class="index-logo-sedona">
-          <a class="logo-sedona" href="index.html">
-            <img src="img/city-of-sedona.png" width="137" height="70" alt="city of sedona">
-          </a>
-        </div>
       </nav>
+      <div class="index-logo-sedona">
+        <a class="logo-sedona" href="index.html">
+          <img src="img/city-of-sedona.png" width="137" height="70" alt="city of sedona">
+        </a>
+      </div>
     </header>
-    <main class="container">
+    <main class="container-hotels">
       <form class="search-filter" action="https://echo.htmlacademy.ru" method="get">
         <div class="search-filter-infrastructure">
           <h3 class="infrastructure">Инфрастуктура:</h3>
+          <div class="field">
             <input id="pool" type="checkbox" checked>
             <label for="pool">Бассейн</label>
+          </div>
+          <div class="field">
             <input id="parking" type="checkbox">
             <label for="parking">Парковка</label>
+          </div>
+          <div class="field">
             <input id="wi-fi" type="checkbox">
             <label for="wi-fi">wi-fi</label>
+          </div>
         </div>
         <div class="search-filter-type">
           <h3 class="type">Тип жилья:</h3>
+          <div class="field">
             <input id="hotel" type="checkbox" checked>
             <label for="hotel">Гостиница</label>
+          </div>
+          <div class="field">
             <input id="motel" type="checkbox" checked>
             <label for="parking">Мотель</label>
+          </div>
+          <div class="field">
             <input id="apartments" type="checkbox" checked>
             <label for="apartments">Апартаменты</label>
+          </div>
         </div>
         <div class="search-filter-cost">
-          <h3 class="cost">Стоимость в сутки (р):</h3>
+          <h3 class="cost-day">Стоимость в сутки (р):</h3>
           <div class="cost-from-to">
             <input  type="text" value="от 0">
             <input  type="text" value="до 3000">
@@ -69,24 +81,24 @@
           <b class="search-number caption">Найдено: 3</b>
           <p class="sorting">Сортировка:</p>
           <nav class="search-navigation">
-            <ul>
-              <li>
+            <ul class="search-navigation-list">
+              <li class="search-navigation-cost">
                 <a href="#">По цене</a>
               </li>
-              <li>
+              <li class="search-navigation-type">
                 <a href="#">По типу</a>
               </li>
-              <li>
+              <li class="search-navigation-rating">
                 <a href="#">По рейтингу</a>
               </li>
-              <li>
+              <li class="search-navigation-up">
                 <a href="#">
-                  <span class="triangle-up">вверх</span>
+                  <span class="triangle-up">вв</span>
                 </a>
               </li>
-              <li>
+              <li class="search-navigation-down">
                 <a href="#">
-                  <span class="triangle-down">вниз</span>
+                  <span class="triangle-down">вн</span>
                 </a>
               </li>
             </ul>
@@ -105,14 +117,14 @@
               <a class="btn-booking" href="#">Забронировать</a>
             </div>
             <div class="raiting-stars">
-              <ul>
-                <li class="star">
+              <ul class="raiting-number-stars">
+                <li class="star">1
                 </li>
-                <li class="star">
+                <li class="star">2
                 </li>
-                <li class="star">
+                <li class="star">3
                 </li>
-                <li class="star">
+                <li class="star">4
                 </li>
               </ul>
               <p class="rating">Рейтинг: 8,5</p>
@@ -130,12 +142,12 @@
               <a class="btn-booking" href="#">Забронировать</a>
             </div>
             <div class="raiting-stars">
-              <ul>
-                <li class="star">
+              <ul class="raiting-number-stars">
+                <li class="star">1
                 </li>
-                <li class="star">
+                <li class="star">2
                 </li>
-                <li class="star">
+                <li class="star">3
                 </li>
               </ul>
               <p class="rating">Рейтинг: 8,9</p>
@@ -153,10 +165,10 @@
               <a class="btn-booking" href="#">Забронировать</a>
             </div>
             <div class="raiting-stars">
-              <ul>
-                <li class="star">
+              <ul class="raiting-number-stars">
+                <li class="star">1
                 </li>
-                <li class="star">
+                <li class="star">2
                 </li>
               </ul>
               <p class="rating">Рейтинг: 9,2</p>
@@ -166,7 +178,7 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container clearfix">
+      <div class="main-footer-layout">
         <section class="footer-hashtag">
           <b>#visitsedona</b>
         </section>
@@ -176,8 +188,8 @@
           <a class="social-btn social-btn-yt" href="#">Ютюб</a>
         </section>
         <section class="footer-copyright">
-          <p class="lid">WEBSITE BY</p>
-          <a class="logo" href="https://htmlacademy.ru">
+          <p class="copyright">WEBSITE BY</p>
+          <a class="copyright-logo" href="https://htmlacademy.ru">
             <img src="img/html-academy.png" width="113" height="39" alt="HTML Academy">
           </a>
        </section>
