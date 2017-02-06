@@ -3,25 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <main class="main-container">
     <header class="main-header">
       <nav class="main-navigation ">
-        <ul class="main-navigation-list">
-          <li class="main-navigation-info">
-            <a href="#">Информация</a>
-          </li>
-          <li class="main-navigation-photo">
-            <a href="#">Фото и видео</a>
-          </li>
-          <li class="main-navigation-map">
-            <a href="#">Карта штата</a>
-          </li>
-          <li class="main-navigation-hotels">
-            <a href="hotels.html">Гостиницы</a>
-          </li>
+        <ul>
+          <div class="main-navigation-left">
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+          </div>
+          <div class="main-navigation-right">
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="hotels.html">Гостиницы</a>
+            </li>
+          </div>
         </ul>
       </nav>
       <div class="index-logo-sedona">
@@ -36,13 +42,13 @@
       </div>
       <div class="index-content-promo">
         <b class="content-promo">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-        <p class="lid promo-5reason">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="promo-5reason">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       <div class="index-content-all">
         <section class="index-content-first">
           <div class="content-first">
             <h2 class="content-name-first">Настоящий городок</h2>
-            <p>— №1 —</p>
+            <p class="number">— №1 —</p>
             <p class="content-description-first">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="content-first-img">
@@ -66,7 +72,7 @@
         <section class="index-content-second">
           <div class="content-second">
             <h2 class="content-name-second">там есть мост дьявола</h2>
-            <p>— №2 —</p>
+            <p class="number">— №2 —</p>
             <p class="content-description-second">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
           <div class="content-second-img">
@@ -76,24 +82,25 @@
         <section class="index-content-advantages">
           <div class="index-advantages fird">
             <h2 class="content-name-advantages">Небольшая площадь</h2>
-            <p>— №3 —</p>
+            <p class="number">— №3 —</p>
             <p class="content-description-advantages">Все достопримечательности находятся очень близко</p>
           </div>
           <div class="index-advantages fourth">
             <h2 class="content-name-advantages">Красивая дорога</h2>
-            <p>— №4 —</p>
+            <p class="number">— №4 —</p>
             <p class="content-description-advantages">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="index-advantages fifth">
             <h2 class="content-name-advantages">Мало туристов</h2>
-            <p>— №5 —</p>
+            <p class="number">— №5 —</p>
             <p class="content-description-advantages">Большинство едет в гранд каньон и толпится там</p>
           </div>
         </section>
       </div>
       <div class="index-content-booking">
         <b class="content-interest">Заинтересовались?</b>
-        <p class="lid date">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="date">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <div class="opend">
         <a class="btn-search" href="#">Поиск гостиницы в Седоне</a>
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="check-in">
@@ -123,15 +130,16 @@
           <button class="find-hotels" type="submit">Найти</button>
         </form>
       </div>
+      </div>
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249282.08778332322!2d-111.90524353694703!3d34.82307196688206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1485246084033"
-        width="1200" height="600" style="border:0" allowfullscreen=""></iframe>
+        width="1200" height="593" style="border:0" allowfullscreen=""></iframe>
       </div>
     </main>
     <footer class="main-footer">
       <div class="main-footer-layout">
         <section class="footer-hashtag">
-          <b>#visitsedona</b>
+          <a class="visitsedona" href="#">#visitsedona</a>
         </section>
         <section class="footer-social">
           <a class="social-btn social-btn-tweet" href="#">Твиттер</a>
@@ -140,11 +148,10 @@
         </section>
         <section class="footer-copyright">
           <p class="copyright">WEBSITE BY</p>
-          <a class="copyright-logo" href="https://htmlacademy.ru">
-            <img src="img/html-academy.png" width="113" height="39" alt="HTML Academy">
-          </a>
+          <a class="copyright-logo" href="https://htmlacademy.ru">HTML</a>
        </section>
       </div>
     </footer>
+  </main>
   </body>
 </html>
