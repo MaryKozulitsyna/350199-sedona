@@ -49,7 +49,7 @@
           <div class="content-first">
             <h2 class="content-name-first">Настоящий городок</h2>
             <p class="number">— №1 —</p>
-            <p class="content-description-first">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <p class="content-description-first">Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="content-first-img">
             <img  class="content-img" src="img/real-city.jpg" width="800" height="257" alt="Real city">
@@ -70,13 +70,13 @@
           </div>
         </section>
         <section class="index-content-second">
-          <div class="content-second">
-            <h2 class="content-name-second">там есть мост дьявола</h2>
-            <p class="number">— №2 —</p>
-            <p class="content-description-second">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
           <div class="content-second-img">
             <img  class="content-img" src="img/devils-bridge.jpg" width="800" height="257" alt="Devil's bridge">
+          </div>
+          <div class="content-second">
+            <h2 class="content-name-second">там есть<br> мост дьявола</h2>
+            <p class="number">— №2 —</p>
+            <p class="content-description-second">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </section>
         <section class="index-content-advantages">
@@ -99,33 +99,29 @@
       </div>
       <div class="index-content-booking">
         <b class="content-interest">Заинтересовались?</b>
-        <p class="date">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="date">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <div class="opend">
         <a class="btn-search" href="#">Поиск гостиницы в Седоне</a>
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="check-in">
             <label for="check-in-date">Дата заезда:</label>
             <input id="check-in-date" type="text" name="check-in" placeholder="24 Апреля 2017">
-            <a class="calendar-chech-in" href=#>
-              <img src="img/calendar.png" width="21" height="22" alt="calendar">
-            </a>
+            <a class="calendar-chech-in" href=#></a>
           </div>
           <div class="departure">
             <label for="date-of-departure">Дата выезда:</label>
-            <input id="date-of-departure" type="text" name="departure" placeholder="4 Июля 2017">
-            <a class="calendar-departure" href=#>
-              <img src="img/calendar.png" width="21" height="22" alt="calendar">
-            </a>
+            <input id="date-of-departure" class="departure" type="text" name="departure" placeholder="4 Июля 2017">
+            <a class="calendar-departure" href=#></a>
           </div>
           <div class="adults-children">
-            <label for="adults">Взрослые:</label>
-            <button class="btn reduce">-</button>
+            <label class="adults" for="adults">Взрослые:</label>
+            <button class="btn reduce"></button>
             <input id="adults" type="text" name="adults" placeholder="2">
-            <button class="btn increase">+</button>
-            <label for="children">Дети:</label>
-            <button class="btn reduce">-</button>
+            <button class="btn increase"></button>
+            <label class="children" for="children">Дети:</label>
+            <button class="btn reduce"></button>
             <input id="children" type="text" name="children" placeholder="0">
-            <button class="btn increase">+</button>
+            <button class="btn increase"></button>
           </div>
           <button class="find-hotels" type="submit">Найти</button>
         </form>
@@ -153,5 +149,6 @@
       </div>
     </footer>
   </main>
+  
   </body>
 </html>

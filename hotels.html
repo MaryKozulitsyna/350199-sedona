@@ -24,8 +24,8 @@
            <li>
              <a href="#">Карта штата</a>
            </li>
-           <li>
-             <a class="activ-hotels">Гостиницы</a>
+           <li class="active">
+             <a>Гостиницы</a>
            </li>
           </div>
         </ul>
@@ -39,47 +39,55 @@
     <main class="container-hotels">
       <form class="search-filter" action="https://echo.htmlacademy.ru" method="get">
         <div class="search-filter-infrastructure">
-          <h3 class="title">Инфрастуктура:</h3>
-          <div class="field">
+          <h3 class="title">Инфраструктура:</h3>
+          <div class="field type-checked">
             <input id="pool" type="checkbox" checked>
+            <span class="checkbox-indicator"></span>
             <label for="pool">Бассейн</label>
           </div>
           <div class="field">
             <input id="parking" type="checkbox">
+            <span class="checkbox-indicator"></span>
             <label for="parking">Парковка</label>
           </div>
           <div class="field">
-            <input id="wi-fi" type="checkbox">
+            <input id="wi-fi" type="checkbox" disabled />
+            <span class="checkbox-indicator disabled"></span>
             <label for="wi-fi">wi-fi</label>
           </div>
         </div>
         <div class="search-filter-type">
           <h3 class="title">Тип жилья:</h3>
-          <div class="field">
+          <div class="field type-checked">
             <input id="hotel" type="checkbox" checked>
+            <span class="checkbox-indicator"></span>
             <label for="hotel">Гостиница</label>
           </div>
-          <div class="field">
-            <input id="motel" type="checkbox" checked>
+          <div class="field type-checked">
+            <input id="motel" type="checkbox" checked disabled />
+            <span class="checkbox-indicator disabled-checked"></span>
             <label for="parking">Мотель</label>
           </div>
-          <div class="field">
+          <div class="field type-checked">
             <input id="apartments" type="checkbox" checked>
+            <span class="checkbox-indicator"></span>
             <label for="apartments">Апартаменты</label>
           </div>
         </div>
         <div class="search-filter-cost">
-          <h3 class="title">Стоимость в сутки (р):</h3>
-          <div class="cost-from-to">
-            <input  type="text" value="от 0">
-            <input  type="text" value="до 3000">
+          <h3 class="title price">Стоимость в сутки (р):</h3>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
           </div>
-          <div class="skroll">
-            <button class="skroll_left"></button>
-            <button class="skroll_right"></button>
-            <div class="skroll_field"></div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
           </div>
-          <button class="show-result" type="submit">Показать</button>
+          <button class="btn-transparent" type="submit">Показать</button>
         </div>
       </form>
       <div class="result">
@@ -110,9 +118,9 @@
               <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort&Spa">
             </div>
             <div class="hotel-information">
-              <a class="name-type-housing" href="#">Amara Resort&Spa</a>
+              <a class="name-type-housing" href="#">Amara Resort & Spa</a>
               <p class="type-housing">Гостиница</p>
-              <p class="cost">От 4000р</p>
+              <p class="cost">От 4000 р.</p>
               <a class="btn-detail" href="#">Подробнее</a>
               <a class="btn-booking" href="#">Забронировать</a>
             </div>
@@ -137,7 +145,7 @@
             <div class="hotel-information">
               <a class="name-type-housing" href="#">Desert Quail Inn</a>
               <p class="type-housing">Мотель</p>
-              <p class="cost">От 3000р</p>
+              <p class="cost">От 3000 р.</p>
               <a class="btn-detail" href="#">Подробнее</a>
               <a class="btn-booking" href="#">Забронировать</a>
             </div>
@@ -158,9 +166,9 @@
               <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             </div>
             <div class="hotel-information">
-              <a class="name-type-housing" href="#">Villas At Poc Diablo</a>
+              <a class="name-type-housing" href="#">Villas At Poco Diablo</a>
               <p class="type-housing">Апартаменты</p>
-              <p class="cost">От 2000р</p>
+              <p class="cost">От 2000 р.</p>
               <a class="btn-detail" href="#">Подробнее</a>
               <a class="btn-booking" href="#">Забронировать</a>
             </div>
@@ -194,5 +202,6 @@
       </div>
     </footer>
   </main>
+
   </body>
 </html>
