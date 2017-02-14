@@ -35,6 +35,8 @@ h3 {
 }
 
 .main-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin: 0;
@@ -145,6 +147,8 @@ h3 {
 }
 
 .index-content-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -178,6 +182,8 @@ h3 {
 }
 
 .index-content-tourism {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 330px;
 }
@@ -232,6 +238,8 @@ h3 {
 }
 
 .index-content-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -261,6 +269,8 @@ h3 {
 }
 
 .index-content-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 257px;
   background-color: #eeeeee;
@@ -338,11 +348,32 @@ h3 {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
+.appointment-form-close {
+  display: none;
+}
+
+@-webkit-keyframes move {
+0% { -webkit-transform: translateX(0); transform: translateX(0); }
+50% { -webkit-transform: translateX(30px); transform: translateX(30px); }
+100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
+
+@keyframes move {
+0% { -webkit-transform: translateX(0); transform: translateX(0); }
+50% { -webkit-transform: translateX(30px); transform: translateX(30px); }
+100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
+
+.appointment-form {
+-webkit-animation: move 0.6s;
+        animation: move 0.6s;
+}
+
 .appointment-form input[type="text"] {
   height: 26px;
-  width: 333px;
+  width: 303px;
   margin: 0;
-  padding: 6px 0 6px 13px;
+  padding: 6px 30px 6px 13px;
   font: bold 14px/26px "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
@@ -363,6 +394,7 @@ h3 {
 .appointment-form .adults-children input {
   width: 38px;
   padding-left: 0;
+  padding-right: 0;
   text-align: center;
 }
 
@@ -408,8 +440,12 @@ h3 {
 .check-in,
 .departure {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
 }
 
@@ -422,8 +458,12 @@ h3 {
 }
 
 .appointment-form .adults-children{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 54px;
 }
 
@@ -459,7 +499,8 @@ h3 {
 }
 
 .appointment-form .increase::after {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .appointment-form .reduce::before {
@@ -526,8 +567,12 @@ h3 {
 }
 
 .main-footer-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-hashtag a {
@@ -588,10 +633,14 @@ h3 {
 }
 
 .footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   font-size: 14px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .copyright {
@@ -621,9 +670,12 @@ h3 {
 
 
 .search-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 190px;
   background: url("../img/background-hotels.jpg") no-repeat;
+  background-size: cover;
   font-size: 14px;
   color: white;
   padding-top: 27px;
@@ -683,11 +735,13 @@ h3 {
 }
 
 .checkbox + .checkbox-indicator::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .checkbox + .checkbox-indicator::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .search-filter input[type="checkbox"] + .disabled {
@@ -731,12 +785,14 @@ h3 {
 }
 
 .checkbox:checked + .disabled-checked::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   background-color: #6a6a6a;
 }
 
 .checkbox:checked + .disabled-checked::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   background-color: #6a6a6a;
 }
 
@@ -772,7 +828,8 @@ h3 {
   width: 2px;
   height: 22px;
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -858,8 +915,12 @@ h3 {
 }
 
 .result-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   padding: 30px 72px;
   font-size: 12px;
   border-bottom: 1px solid #e5e5e5;
@@ -878,6 +939,8 @@ h3 {
 }
 
 .search-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
   margin: 0;
@@ -966,9 +1029,13 @@ h3 {
 .hotel,
 .motel,
 .apartments {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 30px 72px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1097,27 +1164,3 @@ h3 {
   text-align: center;
   background-color: #f2f2f2;
 }
-
-
-
-
-#psd {
-	/* Позиционируем макет */
-	position: absolute;
-	top: 0;
-	left: 50%;
-	margin: 0 0 0 -640px;
-
-	/* Делаем его полупрозрачным */
-	opacity: .5;
-
-	/* Оставляем возможность взаимодействия с элементами */
-	pointer-events: none;
-
-	/* Инвертируем изображение в вашем любимом -webkit (-blink) браузере */
-	-webkit-filter: invert(100%);
-	}
-body:hover #psd {
-	/* Прячем картинку при наведении */
-	opacity: 0;
-	}
