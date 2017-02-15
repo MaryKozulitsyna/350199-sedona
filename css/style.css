@@ -34,6 +34,9 @@ h3 {
   position: relative;
 }
 
+.main-navigation{
+  padding: 0 6%;
+}
 .main-navigation ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,14 +48,14 @@ h3 {
 
 .main-navigation li {
   display: inline-block;
+  width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font: bold 14px/26px "PT Sans", "Arial", sans-serif;
   vertical-align: top;
 }
 
 .main-navigation a {
-  display: block;
-  width: 240px;
-  padding: 15px 0;
   color: black;
   text-decoration: none;
   text-align: center;
@@ -66,14 +69,8 @@ h3 {
   color: #cacaca;
 }
 
-.main-navigation .information a {
-  width: 235px;
-  margin-right: 5px;
-}
-
 .main-navigation .photo a {
-  width: 235px;
-  margin-right: 5px;
+  margin-left: 29px;
 }
 
 .main-navigation .map-state {
@@ -81,17 +78,14 @@ h3 {
 }
 
 .main-navigation .map-state a {
-  width: 231px;
-  padding-left: 9px;
+  margin-left: 91px;
 }
 
 .main-navigation .hotels {
   margin-left: 0;
 }
 .main-navigation .hotels a {
-  width: 225px;
-  margin-left: 0;
-  padding-left: 15px;
+  margin-left: 131px;
 }
 
 .main-navigation .active a {
@@ -353,15 +347,13 @@ h3 {
 }
 
 @-webkit-keyframes move {
-0% { -webkit-transform: translateX(0); transform: translateX(0); }
-50% { -webkit-transform: translateX(30px); transform: translateX(30px); }
-100% { -webkit-transform: translateX(0); transform: translateX(0); }
+  0% { -webkit-transform: translateY(-395px); transform: translateY(-395px); }
+  100% { -webkit-transform: translateY(0); transform: translateY(0); }
 }
 
 @keyframes move {
-0% { -webkit-transform: translateX(0); transform: translateX(0); }
-50% { -webkit-transform: translateX(30px); transform: translateX(30px); }
-100% { -webkit-transform: translateX(0); transform: translateX(0); }
+  0% { -webkit-transform: translateY(-395px); transform: translateY(-395px); }
+  100% { -webkit-transform: translateY(0); transform: translateY(0); }
 }
 
 .appointment-form {
@@ -575,8 +567,11 @@ h3 {
           align-items: center;
 }
 
-.footer-hashtag a {
+.footer-hashtag {
   margin-right: 254px;
+}
+
+.footer-hashtag a {
   font: bold 21px/26px "PT Sans", "Arial", sans-serif;
   text-decoration: none;
   text-align: center;

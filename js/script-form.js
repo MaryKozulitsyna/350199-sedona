@@ -1,8 +1,8 @@
 var button = document.querySelector(".btn-search");
 var popup = document.querySelector(".appointment-form");
-var checkin = document.querySelector(".check-in-date");
-var departure = document.querySelector(".date-of-departure");
-var adults = document.querySelector(".adults");
+var checkin = document.querySelector("#check-in-date");
+var departure = document.querySelector("#date-of-departure");
+var adults = document.querySelector("#adults");
 
 button.addEventListener("click", function(event) {
   event.preventDefault();
@@ -11,7 +11,7 @@ button.addEventListener("click", function(event) {
 popup.addEventListener("submit", function(event) {
   if (!checkin.value || !departure.value || !adults.value) {
   event.preventDefault();
-  console.log("Нужно ввести даты заезда и выезда, и количество людей");
+  alert("Нужно ввести даты заезда и выезда, и количество людей");
   }
 });
 window.addEventListener("keydown", function(event) {
