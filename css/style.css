@@ -34,9 +34,10 @@ h3 {
   position: relative;
 }
 
-.main-navigation{
+.main-navigation {
   padding: 0 6%;
 }
+
 .main-navigation ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,6 +85,7 @@ h3 {
 .main-navigation .hotels {
   margin-left: 0;
 }
+
 .hotels a {
   margin-left: 131px;
 }
@@ -138,16 +140,18 @@ h3 {
   text-align: center;
 }
 
-.promo-5reason {
+.promo-reasons {
   display: block;
   margin: 0;
   line-height: 26px;
 }
 
 .index-content-first {
+  position:relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 .content-first {
@@ -175,8 +179,15 @@ h3 {
 }
 
 .content-first-img {
-  width: 800px;
-  height: 257px;
+  position: absolute;
+  right: 0;
+}
+
+.content-img {
+  position: relative;
+  top: -75px;
+  width: 100%;
+  height: auto;
 }
 
 .index-content-tourism {
@@ -236,17 +247,21 @@ h3 {
 }
 
 .index-content-second {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 .content-second-img {
-  width: 800px;
-  height: 257px;
+  position: absolute;
+  left: 0;
 }
 
 .content-second {
+  position: relative;
+  left: 800px;
   width: 400px;
   min-height: 257px;
   text-align: center;
@@ -647,6 +662,7 @@ h3 {
 .social-btn-fb:focus {
   background-position: -61px -203px;
 }
+
 .social-btn-yt:focus {
   background-position: -118px -203px;
 }
@@ -682,8 +698,6 @@ h3 {
 .copyright-logo:focus {
   background-position: -61px -136px;
 }
-
-
 
 .search-filter {
   display: -webkit-box;
@@ -941,6 +955,7 @@ h3 {
   font-size: 12px;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .search-number {
   margin-right: 50px;
   font-size: 21px;
