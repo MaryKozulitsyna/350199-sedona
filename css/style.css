@@ -69,7 +69,7 @@ h3 {
   color: #cacaca;
 }
 
-.main-navigation .photo a {
+.photo a {
   margin-left: 29px;
 }
 
@@ -77,18 +77,22 @@ h3 {
   margin-left: auto;
 }
 
-.main-navigation .map-state a {
+.map-state a {
   margin-left: 91px;
 }
 
 .main-navigation .hotels {
   margin-left: 0;
 }
-.main-navigation .hotels a {
+.hotels a {
   margin-left: 131px;
 }
 
-.main-navigation .active a {
+.active a {
+  color: #766357;
+}
+
+.active a:hover {
   color: #766357;
 }
 
@@ -379,15 +383,12 @@ h3 {
 }
 
 .appointment-form input[type="text"]:focus {
+  height: 22px;
+  width: 299px;
   color: #000000;
   background-color: #ffffff;
-}
-
-.appointment-form .adults-children input {
-  width: 38px;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center;
+  outline:none;
+  border: 2px solid #e5e5e5;
 }
 
 .calendar {
@@ -441,12 +442,19 @@ h3 {
   margin-bottom: 30px;
 }
 
-.appointment-form .check-in label {
+.check-in label {
   margin-right: 21px;
 }
 
-.appointment-form .departure label {
+.departure label {
   margin-right: 18px;
+}
+
+.adults-children input[type="text"] {
+  width: 38px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
 }
 
 .appointment-form .adults-children{
@@ -468,6 +476,17 @@ h3 {
   margin-right: 27px;
 }
 
+.adults-children input[type="text"]:focus {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  outline:none;
+  border: 2px solid #e5e5e5;
+}
+
 .appointment-form .btn {
   position: relative;
   height: 38px;
@@ -477,6 +496,10 @@ h3 {
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
+}
+
+.appointment-form .btn:focus {
+  outline:none;
 }
 
 .appointment-form .increase::before,
@@ -507,13 +530,13 @@ h3 {
 
 .appointment-form .increase:hover:before,
 .appointment-form .increase:hover:after,
-.appointment-form .reduce:hover:before{
+.appointment-form .reduce:hover:before {
   background-color: #000000;
 }
 
 .appointment-form .increase:focus:before,
-.appointment-form .increase:focus:after
-.appointment-form .reduce:focus:before{
+.appointment-form .increase:focus:after,
+.appointment-form .reduce:focus:before {
   background-color: #81b3d2;
 }
 
@@ -527,6 +550,7 @@ h3 {
   text-decoration: none;
   color: white;
   background-color: #81b3d2;
+  outline:none;
   border: none;
   cursor: pointer;
 }
@@ -955,14 +979,19 @@ h3 {
   border-bottom: 1px dotted #81b3d2;
 }
 
+.search-navigation a:hover {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
 .search-navigation a:focus {
   color: #81b3d2;
   border-bottom: none;
 }
 
-.search-navigation a:hover {
-  color: #81b3d2;
-  border-bottom: 1px dotted #81b3d2;
+.search-navigation a:active {
+  color: #000000;
+  border-bottom: none;
 }
 
 .up-down {
@@ -987,6 +1016,14 @@ h3 {
 }
 
 .up-down .filter-up:focus {
+  position: absolute;
+  top: -15px;
+  right: 24px;
+  border: 6px solid transparent;
+  border-bottom: 10px solid #81b3d2;
+}
+
+.up-down .filter-up:active {
   position: absolute;
   top: -15px;
   right: 24px;
